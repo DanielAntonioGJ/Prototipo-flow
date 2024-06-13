@@ -22,12 +22,5 @@ Este proyecto se centra en el análisis de flujo no invasivo en reactores quími
 - Los resultados del entrenamiento muestran una pérdida de 1.3740x10^-4 y un MSE de 1.3740x10^-4.
 - La validación muestra una pérdida de 1.3466x10^-4 y un MSE de 1.346x10^-4.
 
-## Uso del Modelo
-- Instrucciones para usar el modelo entrenado para hacer predicciones en nuevos datos.
 
-## Contribuciones
-- Se invita a la comunidad a reportar issues y sugerir mejoras.
 
-## Referencias
-- [1] L. Arenas and J. Smith, “Critical analysis of electrode materials for electrochemical applications,” Journal of Electrochemical Science, 2020.
-- [2] J. Escudero-González, P. Amparo Lopez-Jimenez, “Redox cell hydrodynamic modelling: Towards real improved geometry based on CFD analysis,” Engineering Applications of Computational Fluid Mechanics, 2014.
