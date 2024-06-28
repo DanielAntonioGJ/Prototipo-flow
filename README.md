@@ -56,5 +56,5 @@ A continuación se muestran algunos de los resultados visuales obtenidos con el 
 
 | Flujo óptico con ruido inicial | Flujo óptico procesado por la red neuronal Unet |
 |:------------------------------:|:----------------------------------------------:|
-| ![GIF de Resultados 1](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/resultado1.gif) | ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/resultado2.gif) |
+| ![GIF de Resultados 1](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/bifurcado.gif) | ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/bifurcado.gif) |
 
