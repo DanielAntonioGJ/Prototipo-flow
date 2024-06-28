@@ -9,7 +9,7 @@ Este proyecto se centra en el análisis de flujo no invasivo en reactores quími
 ## Metodología
 ### Enfoque Inicial
 El primer enfoque del proyecto utilizó una combinación de algoritmos clásicos de cálculo de flujo óptico como Gunnar Farneback. Estos algoritmos, aunque efectivos en la obtención de vectores de flujo óptico, generaban resultados con un considerable nivel de ruido. Para abordar este problema, se implementó una red neuronal autoencoder con capas convolucionales diseñada para aprender a remover este ruido y obtener vectores de flujo óptico codificados con menos ruido.
-![Red Propuesta](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/Prototipo_unet.png)
+![Red Propuesta](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/Prototipo_unet.png)
 
 ### Arquitectura del Modelo
 La red propuesta es un autoencoder con capas convolucionales. La estructura del modelo comienza con 32 características y se expande a 128 antes de reducirse nuevamente. Este enfoque permite capturar características de diferentes niveles de complejidad del flujo óptico.
@@ -18,7 +18,7 @@ La red propuesta es un autoencoder con capas convolucionales. La estructura del 
 * **Activaciones ReLU**: Introducen no linealidades en el modelo, permitiendo que aprenda relaciones más complejas.
 A continuación se muestra la arquitectura de la red propuesta:
 
-![Red Propuesta](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/red_propuesta_.png)
+![Red Propuesta](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/red_propuesta_.png)
 
 ## Entrenamiento
 **Algoritmo de Optimización**: El modelo se entrenó utilizando el algoritmo Adam, conocido por su eficiencia en el ajuste de parámetros.
@@ -27,7 +27,7 @@ A continuación se muestra la arquitectura de la red propuesta:
 
 **Historial de Entrenamiento**: A continuación se muestra el historial de entrenamiento del modelo:
 
-![Entrenamiento](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/Entrenamiento.png)
+![Entrenamiento](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/Entrenamiento.png)
 
 ## Resultados
 Los resultados obtenidos son visual y numericamente satisfactorios, mostrando la capacidad del modelo para generar imágenes de flujo óptico con ruido reducido.
@@ -38,11 +38,11 @@ Pérdida de Validación: $1.3466 \times 10^{-4}$
 MSE de Validación: $1.346 \times 10^{-4}$
 Estos resultados indican que el modelo tiene un buen rendimiento en términos de minimización de la pérdida y del error cuadrático medio, tanto en el conjunto de entrenamiento como en el de validación.
 
-![Resultado 1](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/Resultado1.png)
-![Resultado 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/Resultado2.png)
-![Resultado 3](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/Resultado3.png)
-![Resultado 4](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/Resultado4.png)
-![Resultado 5](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/Resultado5.png)
+![Resultado 1](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/Resultado1.png)
+![Resultado 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/Resultado2.png)
+![Resultado 3](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/Resultado3.png)
+![Resultado 4](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/Resultado4.png)
+![Resultado 5](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/Resultado5.png)
 
 Ventajas de RAFT:
 Mejora visual del flujo óptico.
@@ -55,17 +55,18 @@ A continuación se muestran algunos de los resultados visuales obtenidos con el 
 
 | Flujo óptico| Flujo óptico procesado por la red|
 |:------------------------------:|:----------------------------------------------:|
-| ![GIF de Resultados 1](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/bifurcado_o.gif) | ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/bifurcado.gif) |
+| ![GIF de Resultados 1](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/gif/bifurcado_o.gif) | ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/gif/bifurcado.gif) |
 
 | Flujo óptico| Flujo óptico procesado por la red|
 |:------------------------------:|:----------------------------------------------:|
-| ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/canalizado_o.gif) | ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/canalizado.gif) |
+| ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/gif/canalizado_o.gif) | ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/gif/canalizado.gif) |
 
 | Flujo óptico| Flujo óptico procesado por la red|
 |:------------------------------:|:----------------------------------------------:|
-| ![GIF de Resultados 3](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/original_o.gif) | ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/original.gif) |
+| ![GIF de Resultados 3](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/gif/original_o.gif) | ![GIF de Resultados 2](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/gif/original.gif) |
 
 ## Demo app
 
+Actualmente, estamos desarrollando una aplicación multiplataforma en Flutter para proporcionar una interfaz de usuario intuitiva y accesible que permita a los operadores de los reactores monitorear y analizar el flujo en tiempo real. Esta aplicación integrará los resultados del análisis de flujo óptico, facilitando la toma de decisiones y mejorando la eficiencia operativa.
 
-![Demoa app](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/app_demo.png)
+![Demoa app](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/img/app_demo.png)
