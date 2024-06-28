@@ -68,4 +68,4 @@ A continuación se muestran algunos de los resultados visuales obtenidos con el 
 ## Demo app
 
 
-![Demoa app](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/Resultado1.png)
+![Demoa app](https://github.com/DanielAntonioGJ/Prototipo-flow/blob/main/app_demo.png)
